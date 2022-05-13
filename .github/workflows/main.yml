@@ -34,7 +34,7 @@ jobs:
         # if: ${{ github.event.inputs.actions  == 'start'}}
         run: |
           echo "test output"
-          echo "${{ GITHUB_REPOSITORY }}"
+          echo "${{ github.repository }}"
 
   output-jobenv:
     runs-on: ubuntu-latest
