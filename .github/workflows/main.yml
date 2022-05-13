@@ -32,7 +32,9 @@ jobs:
     steps:
       - id: isDeployHeroku # TODO check atcion doc for usage
         # if: ${{ github.event.inputs.actions  == 'start'}}
-        run: echo "test output"
+        run: |
+          echo "test output"
+          echo "${{GITHUB_REPOSITORY}}"
 
   output-jobenv:
     runs-on: ubuntu-latest
